@@ -1,0 +1,15 @@
+trim_video.api_config_page:
+  path: 'upload-video'
+  defaults:
+    _form: '\Drupal\trim_video\Form\ConvertVideoForm'
+    _title: 'Upload Video to Convert - Settings'
+  requirements:
+    _permission: 'access content'
+    
+trim_video.content:
+  path: '/video'
+  defaults:
+    _controller: '\Drupal\trim_video\Controller\ConvertVideoController::content'
+    _title: 'Video'
+  requirements:
+    _permission: 'access content'

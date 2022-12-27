@@ -1,0 +1,21 @@
+{{ attach_library('trim_video/trim_video-style') }}
+{{ {'#cache': {'max-age': 0}} }}
+<div class="content">
+{% if content.trim_video|length > 0 %}
+    <h3> This is the result video: </h3>
+    <div class="result">
+        <div>
+            <p>Trim video: </p>
+            <video class="p-5" width="320" controls>
+                <source src="{{content.trim_video}}">
+            </video>
+        </div>
+        <div>
+            <p>Thumbnail video: </p>
+            <img class="p-5" width="320" src="{{content.thumb_video}}"/>
+        <div>
+    </div>
+{% endif %}
+    <a href="/upload-video"> Please upload video </a>
+</div>
+

@@ -1,0 +1,4 @@
+services:
+  trim_video.cloudinary_service:
+    class: \Drupal\trim_video\CloudinaryService
+    arguments: []

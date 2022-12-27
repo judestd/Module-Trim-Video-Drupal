@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme()
+ */
+function trim_video_theme($existing, $type, $theme, $path){
+    return [
+        'trim-video' => [
+            'variables' => ['content' => NULL]
+        ]
+    ];
+}

@@ -1,0 +1,4 @@
+trim_video-style:
+  css:
+    theme:
+      css/main.css: {}
